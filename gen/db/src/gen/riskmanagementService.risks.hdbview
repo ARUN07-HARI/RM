@@ -1,0 +1,10 @@
+VIEW riskmanagementService_risks AS SELECT
+  risks_0.ID,
+  risks_0.TITLE,
+  risks_0.Prio,
+  risks_0.Description,
+  risks_0.Impact,
+  risks_0.Criticality,
+  risks_0.mitigation_ID,
+  risks_0.a_BusinessPartner_BusinessPartner
+FROM riskmanagement_risks AS risks_0

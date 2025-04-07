@@ -1,0 +1,8 @@
+VIEW riskmanagementService_Mitigations AS SELECT
+  Mitigations_0.ID,
+  Mitigations_0.CreatedAt,
+  Mitigations_0.CreatedBy,
+  Mitigations_0.Description,
+  Mitigations_0.Owner,
+  Mitigations_0."TIMELINE"
+FROM riskmanagement_Mitigations AS Mitigations_0

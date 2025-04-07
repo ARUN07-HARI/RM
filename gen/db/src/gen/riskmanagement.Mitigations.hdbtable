@@ -1,0 +1,9 @@
+COLUMN TABLE riskmanagement_Mitigations (
+  ID NVARCHAR(36) NOT NULL,
+  CreatedAt NVARCHAR(100),
+  CreatedBy NVARCHAR(100),
+  Description NVARCHAR(100),
+  Owner NVARCHAR(100),
+  "TIMELINE" NVARCHAR(100),
+  PRIMARY KEY(ID)
+)

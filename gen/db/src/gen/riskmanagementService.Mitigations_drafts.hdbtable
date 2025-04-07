@@ -1,0 +1,13 @@
+COLUMN TABLE riskmanagementService_Mitigations_drafts (
+  ID NVARCHAR(36) NOT NULL,
+  CreatedAt NVARCHAR(100) NULL,
+  CreatedBy NVARCHAR(100) NULL,
+  Description NVARCHAR(100) NULL,
+  Owner NVARCHAR(100) NULL,
+  "TIMELINE" NVARCHAR(100) NULL,
+  IsActiveEntity BOOLEAN,
+  HasActiveEntity BOOLEAN,
+  HasDraftEntity BOOLEAN,
+  DraftAdministrativeData_DraftUUID NVARCHAR(36) NOT NULL,
+  PRIMARY KEY(ID)
+)

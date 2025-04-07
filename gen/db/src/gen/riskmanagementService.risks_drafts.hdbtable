@@ -1,0 +1,15 @@
+COLUMN TABLE riskmanagementService_risks_drafts (
+  ID NVARCHAR(36) NOT NULL,
+  TITLE NVARCHAR(100) NULL,
+  Prio NVARCHAR(5) NULL,
+  Description NVARCHAR(100) NULL,
+  Impact INTEGER NULL,
+  Criticality INTEGER NULL,
+  mitigation_ID NVARCHAR(36) NULL,
+  a_BusinessPartner_BusinessPartner NVARCHAR(10) NULL,
+  IsActiveEntity BOOLEAN,
+  HasActiveEntity BOOLEAN,
+  HasDraftEntity BOOLEAN,
+  DraftAdministrativeData_DraftUUID NVARCHAR(36) NOT NULL,
+  PRIMARY KEY(ID)
+)

@@ -1,0 +1,11 @@
+COLUMN TABLE riskmanagement_risks (
+  ID NVARCHAR(36) NOT NULL,
+  TITLE NVARCHAR(100),
+  Prio NVARCHAR(5),
+  Description NVARCHAR(100),
+  Impact INTEGER,
+  Criticality INTEGER,
+  mitigation_ID NVARCHAR(36),
+  a_BusinessPartner_BusinessPartner NVARCHAR(10),
+  PRIMARY KEY(ID)
+)
