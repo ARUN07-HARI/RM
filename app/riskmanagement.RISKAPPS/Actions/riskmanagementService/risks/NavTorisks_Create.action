@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/RISKAPPS/Pages/riskmanagementService_risks/risks_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

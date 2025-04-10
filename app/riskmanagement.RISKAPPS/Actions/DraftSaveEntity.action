@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.DraftEnabled.Save",
+    "Target": {
+        "Service": "/RISKAPPS/Services/riskmanagementService.service",
+        "EntitySet": "Mitigations",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": {
+        "Name": "/RISKAPPS/Actions/UpdateEntitySuccessMessage.action",
+        "Properties": {
+            "Message": "Draft Saved"
+        }
+    },
+    "OnFailure": "/RISKAPPS/Actions/UpdateEntityFailureMessage.action"
+}

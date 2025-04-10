@@ -1,0 +1,82 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RISKAPPS/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/risks/risks_CreateEntity.js",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_risks_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "TITLE",
+							"_Name": "TITLE",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Prio",
+							"_Name": "Prio",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Description",
+							"_Name": "Description",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Impact",
+							"KeyboardType": "Number",
+							"_Name": "Impact",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Criticality",
+							"KeyboardType": "Number",
+							"_Name": "Criticality",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "a_BusinessPartner_BusinessPartner",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{BusinessPartnerFullName}",
+								"ReturnValue": "{BusinessPartner}",
+								"Target": {
+									"EntitySet": "A_BusinessPartner",
+									"Service": "/RISKAPPS/Services/riskmanagementService.service"
+								}
+							},
+							"_Name": "a_BusinessPartner_BusinessPartner",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "risks_Create"
+}

@@ -1,0 +1,72 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/RISKAPPS/Services/riskmanagementService.service",
+		"EntitySet": "Mitigations",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/Mitigations/Mitigations_Cancel.js",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/Mitigations/Mitigations_UpdateEntity.js",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_Mitigations_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "CreatedAt",
+							"_Name": "CreatedAt",
+							"Value": "{CreatedAt}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CreatedBy",
+							"_Name": "CreatedBy",
+							"Value": "{CreatedBy}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Description",
+							"_Name": "Description",
+							"Value": "{Description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Owner",
+							"_Name": "Owner",
+							"Value": "{Owner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Timeline",
+							"_Name": "Timeline",
+							"Value": "{Timeline}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Mitigations_Edit"
+}

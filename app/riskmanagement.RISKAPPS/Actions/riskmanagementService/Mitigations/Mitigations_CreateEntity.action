@@ -1,0 +1,20 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/RISKAPPS/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/RISKAPPS/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CreatedAt": "#Control:CreatedAt/#Value",
+        "CreatedBy": "#Control:CreatedBy/#Value",
+        "Description": "#Control:Description/#Value",
+        "Owner": "#Control:Owner/#Value",
+        "Timeline": "#Control:Timeline/#Value"
+    },
+    "Target": {
+        "EntitySet": "Mitigations",
+        "Service": "/RISKAPPS/Services/riskmanagementService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Mitigations",
+        "Service": "/RISKAPPS/Services/riskmanagementService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/RISKAPPS/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/RISKAPPS/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

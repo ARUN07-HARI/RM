@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/RISKAPPS/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/RISKAPPS/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "TITLE": "#Control:TITLE/#Value",
+        "Prio": "#Control:Prio/#Value",
+        "Description": "#Control:Description/#Value",
+        "Impact": "#Control:Impact/#Value",
+        "Criticality": "#Control:Criticality/#Value",
+        "a_BusinessPartner_BusinessPartner": "#Control:a_BusinessPartner_BusinessPartner/#SelectedValue"
+    },
+    "Target": {
+        "EntitySet": "risks",
+        "Service": "/RISKAPPS/Services/riskmanagementService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

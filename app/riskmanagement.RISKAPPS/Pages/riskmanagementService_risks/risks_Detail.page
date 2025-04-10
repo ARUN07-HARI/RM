@@ -1,0 +1,92 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/RISKAPPS/Services/riskmanagementService.service",
+		"EntitySet": "risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/risks/NavTorisks_Edit.js",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/risks/risks_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,risks_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{TITLE}",
+						"Subhead": "{Prio}",
+						"BodyText": "",
+						"Footnote": "{Impact}",
+						"Description": "{Description}",
+						"StatusText": "{Criticality}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{a_BusinessPartner_BusinessPartner}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "TITLE",
+							"Value": "{TITLE}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Prio",
+							"Value": "{Prio}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Description",
+							"Value": "{Description}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Impact",
+							"Value": "{Impact}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Criticality",
+							"Value": "{Criticality}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "a_BusinessPartner_BusinessPartner",
+							"Value": "{a_BusinessPartner_BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "risks_Detail"
+}

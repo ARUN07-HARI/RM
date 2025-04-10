@@ -1,0 +1,92 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/RISKAPPS/Services/riskmanagementService.service",
+		"EntitySet": "risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/risks/risks_Cancel.js",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/RISKAPPS/Rules/riskmanagementService/risks/risks_UpdateEntity.js",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_risks_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "TITLE",
+							"_Name": "TITLE",
+							"Value": "{TITLE}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Prio",
+							"_Name": "Prio",
+							"Value": "{Prio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Description",
+							"_Name": "Description",
+							"Value": "{Description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Impact",
+							"_Name": "Impact",
+							"Value": "{Impact}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Criticality",
+							"_Name": "Criticality",
+							"Value": "{Criticality}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "a_BusinessPartner_BusinessPartner",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{BusinessPartnerFullName}",
+								"ReturnValue": "{BusinessPartner}",
+								"Target": {
+									"EntitySet": "A_BusinessPartner",
+									"Service": "/RISKAPPS/Services/riskmanagementService.service"
+								}
+							},
+							"Value": "{a_BusinessPartner_BusinessPartner}",
+							"_Name": "a_BusinessPartner_BusinessPartner",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "risks_Edit"
+}
